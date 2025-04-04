@@ -40,3 +40,11 @@ The dataset contains multiple tables, each capturing different aspects of hospit
    - Includes the name, address and other geographic information about the hospital.
 5. Payers Table
    - Information about the name, address, city of the payer usually an insurance company.
+
+## Data Considerations
+
+- The dataset consists of synthetic data and does not represent real patient records.
+- Data follows healthcare standards, including ICD and RxNorm codes where applicable.
+- Fields are formatted using ISO 8601 standards for date/time representation.
+
+
