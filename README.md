@@ -47,4 +47,7 @@ The dataset contains multiple tables, each capturing different aspects of hospit
 - Data follows healthcare standards, including ICD and RxNorm codes where applicable.
 - Fields are formatted using ISO 8601 standards for date/time representation.
 
+## Tools Used
 
+- **Google Cloud BigQuery** for data storage, cleaning, processing and analysis.
+- **Tableau** for data visualization.
