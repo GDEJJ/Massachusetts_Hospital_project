@@ -55,7 +55,9 @@ The dataset contains multiple tables, each capturing different aspects of hospit
 ## Executive Summary
 
 
-## Data Analysis
+## Exploratory Data Analysis
+
+### Analysis Performed
 
 #### Readmission rates over 30 days for patients
 ![Readmission rates](https://github.com/user-attachments/assets/4626bee1-1ce2-46cf-bf0f-04833a3209b0)
@@ -82,5 +84,10 @@ The dataset contains multiple tables, each capturing different aspects of hospit
 - Mental health screenings represent a substantial portion of procedures, with anxiety assessment (336,654), substance assessment (436,804), and depression screenings (524,405 × 2 different methods) collectively accounting for over 1.8 million procedures.
 - The substantial number of health assessments (676,252) alongside relatively fewer intervention procedures suggests MGH may be diagnostically heavy but potentially underutilizing follow-up treatments.
 
+
+#### Patient encounter duration by type
+![Average time spent per encounterclass](https://github.com/user-attachments/assets/3240d295-b03c-4341-b5ea-7fa143f8c3d5)
+
+This data reveals striking time distribution inefficiencies at MGH, with inpatient stays averaging 2,210 minutes (about 37 hours) - nearly four times longer than ambulatory visits (569 minutes) and significantly longer than outpatient visits (353 minutes). The minimal time allocated to wellness encounters (15 minutes) aligns with our earlier insight about the hospital's focus on treatment rather than prevention.
 
 
