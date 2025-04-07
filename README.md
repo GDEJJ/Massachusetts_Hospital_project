@@ -54,8 +54,18 @@ The dataset contains multiple tables, each capturing different aspects of hospit
 
 ## Executive Summary
 
+This analysis evaluated MGH's operational performance using a synthetic dataset of approximately 1,000 patients over an 11-year period. The primary objective was to assess MGH's performance using real-world hospital metrics and uncover actionable insights that inform operational improvements and resource allocation. Our assessment reveals both institutional strengths and opportunities for strategic improvement across patient demographics, healthcare delivery, and resource allocation.
+
+#### Key Findings
+MGH demonstrates strong specialized care capabilities but faces systemic imbalances in resource allocation:
+- Patient population is predominantly white (680 patients) and elderly (20,500+ visits from 66+ age group), with notable underrepresentation of Hispanic patients and younger adults.
+- Substantial resources are devoted to renal dialysis (2.9M procedures) and mental health screenings (1.8M procedures), suggesting specialized excellence but potential gaps in preventive services.
+- Inpatient stays average 2,210 minutes (37 hours), significantly longer than ambulatory visits (569 minutes), while wellness encounters receive minimal time allocation (15 minutes).
+- The 26.5% readmission rate in 2021 (545 patients) indicates care continuity challenges and potential quality gaps that strain resources.
 
 ## Exploratory Data Analysis
+
+Explore all SQL logic in: [MGH_hospital_analysis_queries.sql](./Exploratory-analysis.sql)
 
 ### Analysis Performed
 
@@ -90,4 +100,12 @@ The dataset contains multiple tables, each capturing different aspects of hospit
 
 This data reveals striking time distribution inefficiencies at MGH, with inpatient stays averaging 2,210 minutes (about 37 hours) - nearly four times longer than ambulatory visits (569 minutes) and significantly longer than outpatient visits (353 minutes). The minimal time allocated to wellness encounters (15 minutes) aligns with our earlier insight about the hospital's focus on treatment rather than prevention.
 
+
+## Recommendations
+This analysis identifies opportunities to diversify MGH's patient base, enhance preventive care offerings, and optimize resource allocation while maintaining the hospital's strengths in specialized treatment areas. Implementation of these recommendations would position MGH for more sustainable growth and improved patient outcomes across broader demographic segments.RetryClaude can make mistakes. Please double-check responses.
+
+- Demographic Expansion: Implement targeted outreach programs for Hispanic communities and younger adults, including extended hours, telehealth options, and culturally sensitive communication.
+- Service Portfolio Rebalancing: Increase investment in preventive care and wellness services while maintaining specialized excellence in renal care and mental health.
+- Operational Efficiency: Analyze inpatient processes to reduce average stay durations and optimize resource allocation across encounter types.
+- Post-Discharge Management: Develop structured follow-up programs to address the high readmission rates, particularly for elderly patients with chronic conditions.
 
