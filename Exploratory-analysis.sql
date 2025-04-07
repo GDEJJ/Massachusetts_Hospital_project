@@ -1,5 +1,5 @@
 -- 1. How long are patients staying in the hospital on average each year
-```sql
+
 with t as (
     select 
         Id,
@@ -15,10 +15,11 @@ select
 from t
 group by year
 order by year
-```
+
+    
 
 -- 2. Top 10 most common procedures
-```sql
+    
 SELECT 
   b.description AS procedure_name, 
   COUNT(*) AS procedure_count
@@ -28,10 +29,11 @@ ON a.patient = b.patient
 GROUP BY b.description
 ORDER BY procedure_count DESC
 LIMIT 10;
-```
+
+
 
 -- 3. Which age group visits the hospital most frequently
-```sql
+
 SELECT 
   CASE 
     WHEN DATE_DIFF(COALESCE(deathdate, CURRENT_DATE()), birthdate, YEAR) BETWEEN 0 AND 18 THEN '0-18'
@@ -47,10 +49,11 @@ JOIN `big-query-451012.Hospital_project.meetup_encounter` a
 ON b.id = a.patient
 GROUP BY 1, 2
 ORDER BY age_group;
-```
+
+
 
 -- 4. What is the 30 days admission rate for patients
-```sql
+
 WITH readmission_cte AS (
  SELECT 
      patient,
@@ -69,25 +72,28 @@ FROM readmission_cte
 WHERE TIMESTAMP_DIFF(next_visit, start, DAY) <= 30
 GROUP BY year
 ORDER BY year;
-```
+
+
 
 --5. Race and ethnic distribution
-```sql
+
 select race, ethnicity, count(*) as num_of_patients
 from big-query-451012.Hospital_project.Patients_details
 group by 1, 2
 order by 3 desc, 1, 2
-```
 
+
+    
 --6. Gender distribution of patients
-```sql
+
 select `gender`, count(*) as num_of_patients
 from big-query-451012.Hospital_project.Patients_details
 group by 1
-```
 
+
+    
 --7. Volume of each encounterclass
-```sql
+
 select 
     extract(year from start) as year,
     count(*) as num_of_visit,
@@ -95,10 +101,11 @@ select
 from big-query-451012.Hospital_project.meetup_encounter
 group by 1, 3
 order by 1
-```
+
+
 
 --8. How many patients are uninsured
-```sql
+
 select
   b.name,
   count(distinct a.patient) as num_of_patients
@@ -107,10 +114,11 @@ left join big-query-451012.Hospital_project.payers_info b
 on a.payer = b.Id
 group by 1
 order by 2 desc
-```
 
+
+    
 --9. Number of procedures covered by insurance
-```sql
+
 SELECT 
   COUNT(DISTINCT b.code) AS num_procedures_covered
 FROM `big-query-451012.Hospital_project.meetup_encounter` a
@@ -118,4 +126,4 @@ JOIN `big-query-451012.Hospital_project.Procedures` b
 ON a.patient = b.patient
 WHERE a.payer_coverage IS NOT NULL
 AND LOWER(b.description) LIKE '%procedure%'
-```
+
