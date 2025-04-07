@@ -51,3 +51,36 @@ The dataset contains multiple tables, each capturing different aspects of hospit
 
 - **Google Cloud BigQuery** for data storage, cleaning, processing and analysis.
 - **Tableau** for data visualization.
+
+## Executive Summary
+
+
+## Data Analysis
+
+#### Readmission rates over 30 days for patients
+![Readmission rates](https://github.com/user-attachments/assets/4626bee1-1ce2-46cf-bf0f-04833a3209b0)
+
+
+- A notable spike in both readmission rate (26.5%) and readmission count (545) in 2021 highlights potential strain on hospital resources and care continuity. This signals a need for post-discharge follow-up strategies and targeted care interventions.
+- With an average hospital stay of 3,885 minutes and elevated visit numbers, 2014 represents a year of peak operational load. This suggests potential inefficiencies in throughput and a need to assess resource utilization during high-demand periods.
+
+
+#### Demographic data of patients at MGH
+![Race and ethnic distribution of patients at MGH](https://github.com/user-attachments/assets/3dfef52b-9b6d-410a-a667-430077e972b8)
+![Distribution of age group and their frequencies of visits](https://github.com/user-attachments/assets/1fb1a8ff-26bf-4a80-9765-133051e70b24)
+
+
+- The data shows consistent gender disparities across age brackets, with males outnumbering females in the 51-65 and 66+ age groups, but females outnumbering males in younger age groups. This pattern may indicate gender-specific healthcare-seeking behaviors that affect clinical outcomes.
+- Patients aged 66+ account for approximately 20,500 visits (10,745 male, 9,788 female), which dramatically outweighs all other age groups combined. The 19-35 age group has minimal representation, suggesting either excellent health in this population or, more concerning, significant barriers to care.
+
+
+#### Most common procedures
+![Top 10 most commonly performed procedurs](https://github.com/user-attachments/assets/8b0cefd7-0114-466e-be4d-f79c83d574e0)
+
+
+- The extremely high volume of renal dialysis procedures (2,910,630) dwarfs all other procedures, which aligns with the large 66+ patient population we identified earlier. This suggests a significant kidney disease burden among the elderly patient base that dominates hospital utilization.
+- Mental health screenings represent a substantial portion of procedures, with anxiety assessment (336,654), substance assessment (436,804), and depression screenings (524,405 × 2 different methods) collectively accounting for over 1.8 million procedures.
+- The substantial number of health assessments (676,252) alongside relatively fewer intervention procedures suggests MGH may be diagnostically heavy but potentially underutilizing follow-up treatments.
+
+
+
